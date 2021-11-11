@@ -1,0 +1,28 @@
+<head>
+    <script type="text/javascript">
+
+        window.onload = function() {
+            document.getElementById("score1").innerHTML="Score: 0";
+            document.getElementById("score2").innerHTML="Score: 0";
+            document.getElementById("turn").innerHTML="Turn: "+localStorage.getItem("Player 1");
+            document.getElementById("subject").innerHTML="Subject: "+localStorage.getItem("Subject");
+        }
+        
+        </script>
+
+
+</head>
+<body>
+    <center>
+        <h1>The Quiz!</h1>
+        <h2 id="score1"></h2>
+        <h2 id="score2"></h2>
+        <h2 id="subject"></h2>
+        <h2 id="turn"></h2>
+        <h2 id="ql"></h2>
+        <input type="text" id="input">
+        <button>Answer</button>
+    </center>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</body>
